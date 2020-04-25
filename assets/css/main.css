@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(/assets/fonts/Inconsolata/Inconsolata/static/InconsolataExpanded-Light.ttf); /* IE9 Compat Modes */
+    
+  }
+  @font-face {
+    font-family: 'Inconsolata-light';
+    src: url(/assets/fonts/Inconsolata/Inconsolata/static/InconsolataExtraCondensed-ExtraLight.ttf); /* IE9 Compat Modes */
+    
+  }
+
+body {
+    font-family: Inconsolata-light,Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(210, 187, 160);
+    font-size: 20px;    
+    margin:0;
+    padding:0; 
+    letter-spacing: 1px;
+    
+    
+
+}
+
+h1,h2,h3,h4,h5 {
+    margin:0;
+    padding:0;    
+    font-family: 'Inconsolata';
+}
+
+header {
+    height: 120px;
+    background-color: rgb(182, 204, 148);
+    border-bottom: 3px solid white;
+    margin-bottom: 40px;
+}
+
+
+footer {
+    height: 100px;
+    background-color: rgb(97, 94, 94);
+    text-align: center;
+    width: 100vw;
+    
+    bottom: 0;
+}
+
+footer h2{
+    padding-top: 40px;
+    
+    font-size: 1rem;
+
+}
+
+
+/************************************************************* header ***************************************************************************/
+.main-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    display: flex; 
+
+    
+}
+.nav-container li  {
+    margin-left: 20px;
+   
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.main-container {
+    width: 85vw;
+    margin: 20px auto 20px;
+    
+}
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.book-preview {
+    width: 300px;
+    
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(182, 204, 148);
+    padding: 0;
+    
+}
+
+.preview-header {
+    
+    color: black;
+    padding: 0;
+    height: 30px;  
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.preview-price {
+    height: 30px;  
+    padding: 0;
+    color: black;
+    
+}
+
+
+.book-preview img {
+    margin-top: 4px;
+    width: 160px;
+    height: 200px;
+    border: white 1px solid;
+    
+}
+
+.second-details-container {
+    display: flex;
+    justify-content: space-between
+}
+.second-details-container label {
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+/* search book */
+input[type=text] {
+    
+    min-width:300px ;
+    width: 500px;
+}
+
+.found-book-list {
+    background-color: #eee;
+    z-index: 2;
+    position: absolute;
+    top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+.filter-container {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.filter-container h2 {
+    margin-bottom: 15px;
+}
+
+.filter-container label {
+    margin-left: 8px;
+    margin-right: 5px;
+    
+}
+/* **********************************************************************book sect*********************** */
+
+
+.book-detail {
+    display: block;
+    width: 100vw;
+}
+.book-sect{
+    width: 100vw;
+    display: flex;
+
+}
+
+.book-detail-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-right: 50px;
+    
+}
+
+.book-details-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.book-detail-image {
+    width: 300px;
+}
+
+.reviews-sect {
+    min-height: 120px;
+   display: inline-block;
+}
+
+.review-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+.review-form label {
+    margin-left: 5px;
+}
+
+.first-details-container {
+    margin-bottom: 25px;
+}
+
+.review-add h4 {
+    margin-bottom: 15px;
+}
+
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-list-item {
+    margin-top:20px;
+    margin-left: 20px;
+    width: 130px;
+    border: white 1px solid;
+    padding: 8px;
+    background-color: rgb(182, 204, 148);
+}
+
+
+.user-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+    width: 300px;
+    height: 150px;
+    background-color: whitesmoke;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+}
